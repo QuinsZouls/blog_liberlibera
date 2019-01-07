@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Roboto+Slab');
+/** animacion**/
+@keyframes salirDerecha {
+  20% {
+    opacity: 1;
+    transform: translate3d(20px, 0, 0);
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(-2500px, 0, 0);
+  }
+}
+*{
+    box-sizing: border-box;
+    margin: 0 0 0 0;
+    padding: 0;
+}
+img{
+    max-width: 800px;
+    min-width: 200px;
+    max-height: 800px;
+    min-height: 200px;
+    width: auto;
+}
+a#mostrar_menu{
+    text-decoration: none;
+    color: black;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+header{
+    background-color: #ffff;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-bottom-width: 1px;
+    border-bottom-color: black;
+}
+#subir{
+    position: fixed;
+    top: 95vh;
+    left: 95vw;
+    color: black!important;
+    font-size: 40px;
+    text-decoration: none;
+}
+.contraer::before{
+    
+}
+.contraer{
+    transition: left 0.1s ease-in-out;
+    animation-name: salirDerecha;
+   left: -2000px;
+}
+.alargar{
+    left: : 0;
+}
+div.logo{
+    margin-left: 10px;
+    margin-top:10px; 
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 30px;
+    float: left;
+    color: #333;
+}
+.menu-movil{
+    display: none;
+    margin-top:10px; 
+    margin-right: 10px;
+    float: right;
+
+}
+.menu-movil a{
+    font-size: 40px;
+    text-decoration: none;
+    color: #333;
+
+}
+.menu-movil ul{
+    width: 100%;
+    background-color: #f1f1f1;
+    
+}
+.modal-menu{
+    transition: top 0.1s ease-in-out;
+    background-color: rgb(60, 72, 89);
+    top: 60px;
+    width: 100%;
+    height: 90vh;
+    position: fixed;
+}
+.modal-menu ul{
+    list-style: none;
+}
+.modal-menu ul a{
+    text-decoration: none;
+    color: #000;
+}
+.modal-menu ul li{
+    text-align: center;
+    border-bottom: 1px solid white; 
+    margin-bottom: 20px;
+}
+.modal-menu ul li a{
+    color: white;
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: normal;
+}
+.menu-pc {
+    margin-right: 10px;
+    margin-top:10px; 
+    float: right;
+}
+.menu-pc nav ul {
+    list-style: none;
+    
+    text-decoration: none;
+}
+.menu-pc nav ul li {
+    float: left;
+    margin-left: 30px;
+}
+.menu-pc nav ul li a{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+.menu-pc nav ul li a:hover{
+    color: orange!important;
+}
+
+.contenedor{
+    text-align: center;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1500px;
+    min-width: 300px;
+    height: auto;
+    width: 100%;
+}
+.contenido-post{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30vh;
+    max-width: 900px;
+    width: 100%;
+    font-size: 25px!important;
+    font-weight: 400;
+    font-family: 'PT Serif'!important, serif!important;
+}
+.contenedor .inicio img:first-child{
+    width: 700px;
+    height: 500px;
+    float: right;
+    margin-top: 20px;
+    
+    margin-right: 20px;
+}
+.contenedor h1:first-child{
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 20px;
+    font-size: 50px;
+}
+.contenedor img{
+    width: 100%!important;
+
+}
+.contenedor iframe{
+    width: auto!important;
+
+}
+.flex-contenedor{
+    width: 100%;
+    flex-wrap: wrap;
+    align-content: flex-baseline;
+    display: flex;
+    align-self: center;
+}
+.elemento-flex{
+    flex-shrink: 0;
+    align-items: baseline;
+    margin: 10px 10px 10px 10px;
+}
+.inicio{
+    background: url("..//img/lectura.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 700px;;
+}
+.inicio h1{
+    text-align: center;
+}
+.post{
+    
+    flex: 25%;
+    vertical-align: middle;
+    height: initial;
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+    color: white;
+    background-color: black;
+}
+.post img{
+    vertical-align: middle;
+    width: 100%;
+    height: auto;
+}
+/**    post     **/
+.imagen-titular{
+    width: 100%;
+}
+.contenedor .compartir:before{
+    content: "Compartir";
+    color: #fff;
+    font-size: 20px;
+}
+.contenedor .compartir{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 900px;
+    width: 100%;
+    background: black;
+    width: 100%;
+    height: 10vh;
+}
+.contenedor .compartir ul{
+    display: flex;
+    text-align: center;
+    list-style: none;
+    
+}
+.contenedor .compartir ul li{
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.contenedor .compartir ul li a{
+    font-size: 40px;
+    color: #fff;
+    text-decoration: none;
+}
+.contenedor .compartir ul li a:hover{
+    color: #3b5998;
+}
+.contenedor .compartir ul li a:nth-child(1):hover{
+    color: #1da1f2;
+}
+.contenedor .compartir ul li a:nth-child(3):hover{
+    color: #f1f1f1;
+}
+
+
